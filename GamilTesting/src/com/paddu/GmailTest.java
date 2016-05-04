@@ -91,11 +91,8 @@ public void sendAndReceiveEmail() throws InterruptedException
 		driver.findElement(By.id("gb_71")).click();
 		driver.manage().timeouts().implicitlyWait(3l,TimeUnit.SECONDS);
 		//Verify, SignIn button present or not after SignOut Gmail
-		Assert.assertTrue(driver.findElements(By.id("signIn")).size()>0, "SignIn button should be Exist");
-
-		
-		
-	
+		Assert.assertTrue(driver.findElements(By.id("signIn")).size()>0, "SignIn button should be Exist");	
+		System.out.println("Just testing for first change on git commit");
 }
 @AfterClass
 public void tearDown()
